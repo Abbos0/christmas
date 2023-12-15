@@ -157,7 +157,7 @@ button{
 
 
 .title{
-    color: #d3ad7f;
+    color: black;
     text-align: center;
     font-size: 30px;
     font-weight: 600;
@@ -226,6 +226,7 @@ button:hover{
     font-size: 25px ;
     margin-top: 15px;
     font-weight: 800;
+    color: black;
 }
 .gift-card{
     margin:0px 80px;
