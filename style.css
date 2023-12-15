@@ -4,9 +4,11 @@
     box-sizing: border-box;
     text-decoration: none;
     list-style: none;
+    font-family: 'Poppins', sans-serif;
+    font-family: 'Roboto', sans-serif;
 }
 body{
-    background-color: rgb(17, 16, 16);
+    /* background-color: rgb(17, 16, 16); */
 }
 nav{
     display: flex;
@@ -22,12 +24,12 @@ nav{
     margin-top: -5px;
 }
 .header nav {
-    background-color: rgb(105, 105, 171);
-    padding: 20px 30px;
+    background-color: rgba(207, 207, 225, 0.816);
+    padding: 20px 150px;
 }
 .header .navbar ul{
     display: flex;
-    gap: 20px;
+    gap: 30px;
 }
 
 .header .navbar ul li a{
@@ -46,6 +48,114 @@ nav .fa-bars {
 
 
 
+
+.merry{
+    padding: 50px 50px;
+}
+
+.title span:nth-child(2){
+    color: white;
+}
+.merry-card{
+    /* background-color: #13131a; */
+    display: flex;
+    align-items: center;
+    color: black;
+    margin: 0 100px;
+}
+.merry-img img{
+    width: 100%;
+    max-width: 400px;
+}
+.merry-text{
+    width: 50%;
+    padding: 40px;
+}
+.merry-text h1{
+    font-size: 30px;
+    line-height:40px ;
+
+}
+.merry-text p{
+    margin: 20px 0px;
+    line-height:20px ;
+   color: #5D5656;
+
+}
+
+button{
+    border: none;
+    background-color:rgb(212, 98, 98);
+    color: white;
+    padding: 14px 30px;
+    text-transform: capitalize;
+    transition: 0.3s;
+    border-radius: 20px;
+
+}
+
+
+.title{
+    text-align: center;
+    font-size: 25px ;
+    padding: 10px 10px;
+    font-weight: 800;
+    color: black;
+}
+.giving-start{
+    margin:0px 80px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 45px;
+}
+.giving-start .card{
+    padding: 15px 10px;
+    width: 200px ;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: black;
+}
+.card-img{
+    text-align: center;
+    height: 150px;
+}
+.card-start img{
+    max-width: 90px;
+    width: 100%;
+    margin-top: 15px;
+    transition: 0.3s;
+    height: 90px;
+}
+.card-start img:hover{
+    margin-top: 5px;
+}
+.giving-start .card-start h1{
+    font-size: 20px;
+    font-weight: 600;
+}
+.giving-start .card-start p{
+   font-size: 13px;
+   font-weight: 200;
+   padding:  5px 10px;
+   margin-left: 0px;
+   text-align:center;
+   width: 150px;
+   height: 50px;
+   color: #5D5656;
+}
+.giving-start img:hover{
+    margin-top: 5px;
+}
+.giving-start h1{
+    font-size: 25px;
+    font-weight: 600;
+    padding: 0px 15px;
+    text-align:center;
+}
+
+
 .title{
     color: #d3ad7f;
     text-align: center;
@@ -60,7 +170,6 @@ nav .fa-bars {
     color: white;
 }
 .celebrate-card{
-    background-color: #13131a;
     display: flex;
     align-items: center;
     color: white;
@@ -71,17 +180,29 @@ nav .fa-bars {
 }
 .celebrate-text{
     width: 50%;
-    padding: 40px;
+    padding: 40px ;
+    color: black;
+    margin-left: 10%;
 }
 .celebrate-text h1{
-    font-size: 30px;
+    font-size: 24px;
+    margin: 0px 0px 0px 24px;
+    /* padding: 0px 320px 0px 0px ; */
+    width: 200px;
+    height: 50px;
 }
 .celebrate-text p{
-    margin: 40px 0px;
-    line-height:30px ;
+    font-size: 16px;
+    margin: 20px 0px 40px 24px;
+    line-height:18px ;
+    /* padding: 0px 212px 0px 24px ; */
+    width: 300px;
+    height: 50px;
+   color: #5D5656;
+
 }
 
-button{
+.celebrate-text button{
     border: none;
     background-color:rgb(212, 98, 98);
     color: white;
@@ -89,116 +210,16 @@ button{
     text-transform: capitalize;
     transition: 0.3s;
     border-radius: 20px;
-}
-button:hover{
-    letter-spacing: 3px;
-}
-
-
-
-.title{
-    color: #d3ad7f;
-    text-align: center;
-    font-size: 30px;
-    font-weight: 600;
-    margin-bottom: 30px;
-}
-
-.merry{
-    padding: 50px 50px;
-}
-
-.title span:nth-child(2){
-    color: white;
-}
-.merry-card{
-    background-color: #13131a;
-    display: flex;
-    align-items: center;
-    color: white;
-}
-.merry-img img{
-    width: 100%;
-}
-.merry-text{
-    width: 50%;
-    padding: 40px;
-}
-.merry-text h1{
-    font-size: 30px;
-}
-.merry-text p{
-    margin: 40px 0px;
-    line-height:30px ;
-}
-
-button{
-    border: none;
-    background-color:rgb(212, 98, 98);
-    color: white;
-    padding: 14px 30px;
-    text-transform: capitalize;
-    transition: 0.3s;
-    border-radius: 20px;
+    margin: 20px 0px 40px 24px;
 
 }
 button:hover{
-    letter-spacing: 3px;
+    /* letter-spacing: 3px; */
+    background-color: red;
 }
 
 
 
-.title{
-    text-align: center;
-    font-size: 25px ;
-    margin-top: 15px;
-    font-weight: 800;
-    color: white;
-}
-.giving-start{
-    margin:0px 80px;
-    margin-left: 0px;
-    padding:50px 50px ;
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    gap: 45px;
-}
-.giving-start .card{
-    padding: 15px 10px;
-    width: 200px ;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    color: white;
-}
-.card-img{
-    text-align: center;
-    height: 160px;
-}
-.giving-start img{
-    max-width: 120px;
-    width: 100%;
-    margin-top: 10px;
-    transition: 0.3s;
-    height: 120px;
-}
-.giving-start img:hover{
-    margin-top: 5px;
-}
-.giving-start h1{
-    font-size: 25px;
-    font-weight: 600;
-    padding: 0px 15px;
-    text-align:center;
-}
-.giving-start p{
-   font-size: 18px;
-   font-weight: 200;
-   padding: 0px 15px;
-   text-align:left;
-   text-align:left;
-}
 
 .title{
     text-align: center;
@@ -260,6 +281,53 @@ button:hover{
     color: red;
     font-weight: 900;
 }
+
+
+
+.table{
+    background-color: rgba(178, 44, 62, 0.918);
+    margin: 100px 150px;
+    border-radius: 60px;
+    height: 350px;
+    display: flex;
+    align-items: center;
+    position: relative;
+}
+.table img{
+    max-width: 400px;
+    width: 100%;
+    position: absolute;
+    top: 20px ;
+    right: 30px;
+}
+.table-text{
+    width: 50%;
+    padding: 40px ;
+    color: black;
+    margin-left: 10%;
+}
+.table-text h1{
+    color: white;
+    width: 250px ;
+    height: 50px;
+    font-size: 36px;
+}
+.table-text input{
+    margin: 25px 0px;
+    margin-top: 35px;
+    padding: 16px 24px;
+    border: none;
+    outline: none;
+    border-radius: 30px;
+    background-color: white;
+    font-size: 16px;
+}
+.table-text button{
+    border-radius: 30px;
+    background-color: black;
+    color: white;
+    cursor: pointer;
+}
 @media screen and (max-width:1268px){
     .gift-card{
         margin:0px 10px;
@@ -277,7 +345,7 @@ button:hover{
         flex-direction: row;
         gap: 40px;
     }
-    .navbar ul  {
+.navbar ul  {
         display: none;
     }
     nav .fa-bars{
@@ -286,7 +354,7 @@ button:hover{
     nav {
         position: relative;
     }
-    .header .navbar ul{
+.header .navbar ul{
         display:flex;
         flex-direction: column;
         justify-content: start;
