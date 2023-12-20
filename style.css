@@ -7,8 +7,11 @@
     font-family: 'Poppins', sans-serif;
     font-family: 'Roboto', sans-serif;
 }
+html{
+        scroll-behavior: smooth;
+}
 body{
-    /* background-color: rgb(17, 16, 16); */
+    /* background-color: rgb(160, 102, 102); */
 }
 nav{
     display: flex;
@@ -26,16 +29,21 @@ nav{
 .header nav {
     background-color: rgba(207, 207, 225, 0.816);
     padding: 20px 150px;
+    position:fixed;
+    width: 100%;
+    z-index: 1;
 }
 .header .navbar ul{
     display: flex;
     gap: 30px;
+
 }
 
 .header .navbar ul li a{
     color:black;
     font-weight: 600;
     transition: 0.3s;
+
 }
 .header .navbar ul li a:hover{
     color: red;
@@ -329,6 +337,38 @@ button:hover{
     color: white;
     cursor: pointer;
 }
+
+
+
+.footer .display{
+    display: flex;
+    gap: 40px;
+    text-align: center;
+    justify-content: center;
+    text-align: left;
+}
+.display h1 p{
+    font-weight:400 ;
+    text-align: left;
+    padding: 0px 20px;
+    line-height: 25px;
+    margin-top: 25px;
+   color: #5D5656;
+
+}
+.footer .display h1  .footer-img{
+    width: 120px;
+    height: 135px;   
+    margin: 60px 30px;
+}
+.footer .display h1  .foot{
+    margin-top: 25px;
+}
+.footer .display #footer-img1{
+    margin-top: -80px;
+    margin-left: 150px;
+}
+
 @media screen and (max-width:1268px){
     .gift-card{
         margin:0px 10px;
@@ -390,4 +430,16 @@ button:hover{
         margin-left: 10%;
         margin: 0 20px;
     }
+}
+
+
+.mr{
+    text-align: center;
+    border: 1px dashed red;
+    display:block;
+    color: rgb(37, 2, 15);
+    margin-bottom: 10px;
+    font-weight: 900;
+    font-size: 15px;
+    background-color: rgb(37, 139, 139);
 }
