@@ -36,9 +36,7 @@ nav{
 .header .navbar ul{
     display: flex;
     gap: 30px;
-
 }
-
 .header .navbar ul li a{
     color:black;
     font-weight: 600;
