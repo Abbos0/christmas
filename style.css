@@ -11,7 +11,7 @@ html{
         scroll-behavior: smooth;
 }
 body{
-    /* background-color: rgb(160, 102, 102); */
+    background-color: rgb(160, 102, 102);
 }
 nav{
     display: flex;
@@ -29,14 +29,17 @@ nav{
 .header nav {
     background-color: rgba(207, 207, 225, 0.816);
     padding: 20px 150px;
-    position: fixed;
+    position:fixed;
     width: 100%;
     z-index: 1;
 }
+
 .header .navbar ul{
     display: flex;
     gap: 30px;
+
 }
+
 .header .navbar ul li a{
     color:black;
     font-weight: 600;
@@ -63,11 +66,11 @@ nav .fa-bars {
     color: white;
 }
 .merry-card{
-    /* background-color: #13131a; */
+    /* background-color: #2626a2; */
     display: flex;
     align-items: center;
     color: black;
-    margin: 0 100px;
+    margin: 20px 100px;
 }
 .merry-img img{
     width: 100%;
@@ -75,8 +78,102 @@ nav .fa-bars {
 }
 .merry-text{
     width: 50%;
-    padding: 40px;
+    padding: 40px ;
 }
+@media screen and (max-width:2142px) {
+    .merry-text{
+        width: 100%;
+        max-width: 1000px;
+        padding: 40px 200px;
+    }
+}
+@media screen and (max-width:1534px) {
+    .merry-text{
+        width: 400px;
+        padding: 40px 15px ;
+    }
+    .merry-card {
+        margin: 20px;
+    }
+
+}
+@media screen and (max-width:780px){
+    .merry-text{
+       margin-left: 30px;
+    }
+    .merry-text h1{
+        margin: 20px 0px;
+        width: 300px;
+    }
+    .merry-card {
+        margin: 20px;
+    }
+    .navbar ul  {
+    display: none;
+    }
+nav .fa-bars{
+    display: block;
+    }
+nav {
+    position: relative;
+    }
+.header .navbar ul{
+    display:flex;
+    flex-direction: column;
+    justify-content: start;
+    align-items: center;
+    padding: 30px 50px;
+    position: absolute;
+    top: 60px;
+    left:-100%;
+    background-color: white;
+    transition: 0.3s;
+}
+.header .navbar .click{
+    left: 0;
+    }
+
+}
+@media screen and (max-width:680px){
+    .merry-text{
+        margin: 5px 20px;
+     }
+     .merry-card{
+        margin: 20px 20px;
+        width: 550px;
+        height: 350px;
+    }
+}
+@media screen and (max-width:450px) {
+   
+    .merry-text{
+        max-width: 320px;
+        width: 100%;
+        padding: 0 15px;
+
+    }
+    .merry-card .merry-text h1{
+        font-size: 23px;
+    }
+    nav .fa-bars{
+        padding-left:10%;
+    }
+    nav .logo {
+        margin-left:-30px;
+    }
+}
+@media screen and (max-width:350px){
+    .merry-card{
+        margin: 20px 10px;
+        width: 200px;
+    }
+    .merry-card img{
+        width: 200px;
+        padding: 0px 10px;
+
+    }
+}
+
 .merry-text h1{
     font-size: 30px;
     line-height:40px ;
@@ -384,30 +481,7 @@ button:hover{
         flex-direction: row;
         gap: 40px;
     }
-.navbar ul  {
-        display: none;
-    }
-    nav .fa-bars{
-        display: block;
-    }
-    nav {
-        position: relative;
-    }
-.header .navbar ul{
-        display:flex;
-        flex-direction: column;
-        justify-content: start;
-        align-items: center;
-        padding: 30px 50px;
-        position: absolute;
-        top: 60px;
-        left:-100%;
-        background-color: white;
-        transition: 0.3s;
-    }
-    .header .navbar .click{
-        left: 0;
-    }
+
 }
 @media screen and (max-width:730px){
     .gift-card{
@@ -428,6 +502,7 @@ button:hover{
         margin-left: 10%;
         margin: 0 20px;
     }
+   
 }
 
 
