@@ -10,9 +10,9 @@
 html{
         scroll-behavior: smooth;
 }
-body{
+/* body{
     background-color: rgb(160, 102, 102);
-}
+} */
 nav{
     display: flex;
     justify-content: space-between; 
@@ -56,7 +56,7 @@ nav .fa-bars {
 }
 
 
-
+/* Merry css start */
 
 .merry{
     padding: 50px 50px;
@@ -93,7 +93,7 @@ nav .fa-bars {
         padding: 40px 15px ;
     }
     .merry-card {
-        margin: 20px;
+        margin: 20px ;
     }
 
 }
@@ -106,6 +106,7 @@ nav .fa-bars {
         width: 300px;
     }
     .merry-card {
+        /* width: 200px; */
         margin: 20px;
     }
     .navbar ul  {
@@ -139,7 +140,7 @@ nav {
         margin: 5px 20px;
      }
      .merry-card{
-        margin: 20px 20px;
+        margin: 20px 0px;
         width: 550px;
         height: 350px;
     }
@@ -164,7 +165,7 @@ nav {
 }
 @media screen and (max-width:350px){
     .merry-card{
-        margin: 20px 10px;
+        margin: 20px 0px;
         width: 200px;
     }
     .merry-card img{
@@ -196,7 +197,9 @@ button{
     border-radius: 20px;
 
 }
+/* Merry css end */
 
+/* Giving css start */
 
 .title{
     text-align: center;
@@ -205,20 +208,14 @@ button{
     font-weight: 800;
     color: black;
 }
-.giving-start{
-    margin:0px 80px;
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    gap: 45px;
-}
-.giving-start .card{
-    padding: 15px 10px;
+
+.giving-start {
     width: 200px ;
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
     align-items: center;
     color: black;
+     margin-left:20%;
 }
 .card-img{
     text-align: center;
@@ -257,6 +254,18 @@ button{
     padding: 0px 15px;
     text-align:center;
 }
+@media screen and (max-width:680px) {
+   .giving .title{
+        margin-left: 180px;
+        padding: 0px 0px;
+    }
+}
+
+
+/* Giving css end */
+
+
+/* Celebret css start */
 
 
 .title{
@@ -266,8 +275,8 @@ button{
     font-weight: 600;
     margin-bottom: 30px;
 }
-.celebrate{
-    padding: 50px 50px;
+/* .celebrate{
+    padding: 50px 0px;
 }
 .title span:nth-child(2){
     color: white;
@@ -276,13 +285,17 @@ button{
     display: flex;
     align-items: center;
     color: white;
+    margin: 20px 100px;
+    background-color: blue;
+
 }
 .celebrate-img img{
     max-width: 400px;
     width: 100%;
 }
 .celebrate-text{
-    width: 50%;
+    width: 100%;
+    max-width: 200px;
     padding: 40px ;
     color: black;
     margin-left: 10%;
@@ -290,7 +303,6 @@ button{
 .celebrate-text h1{
     font-size: 24px;
     margin: 0px 0px 0px 24px;
-    /* padding: 0px 320px 0px 0px ; */
     width: 200px;
     height: 50px;
 }
@@ -298,13 +310,10 @@ button{
     font-size: 16px;
     margin: 20px 0px 40px 24px;
     line-height:18px ;
-    /* padding: 0px 212px 0px 24px ; */
     width: 300px;
     height: 50px;
    color: #5D5656;
-
 }
-
 .celebrate-text button{
     border: none;
     background-color:rgb(212, 98, 98);
@@ -314,27 +323,161 @@ button{
     transition: 0.3s;
     border-radius: 20px;
     margin: 20px 0px 40px 24px;
-
 }
 button:hover{
-    /* letter-spacing: 3px; */
     background-color: red;
 }
-
-
-
-
-.title{
-    text-align: center;
-    font-size: 25px ;
-    margin-top: 15px;
-    font-weight: 800;
-    color: black;
+@media screen and (max-width:680px){
+.celebrate-card .celebrate-img img{
+        display: flex;
+    margin: 20px 100px;
+    }
+} */
+.celebrate{
+    padding: 50px 50px;
 }
+.title span:nth-child(2){
+    color: white;
+}
+.celebrate-card{
+    /* background-color: #2626a2; */
+    display: flex;
+    align-items: center;
+    color: black;
+    margin: 20px 100px;
+}
+.celebrate-img img{
+    width: 100%;
+    max-width: 400px;
+}
+.celebrate-text{
+    width: 50%;
+    padding: 40px ;
+}
+@media screen and (max-width:2142px) {
+    .celebrate-text{
+        width: 100%;
+        max-width: 1000px;
+        padding: 40px 200px;
+    }
+}
+@media screen and (max-width:1534px) {
+    .celebrate-text{
+        width: 400px;
+        padding: 40px 15px ;
+    }
+    .celebrate-card {
+        margin: 20px ;
+    }
+
+}
+@media screen and (max-width:780px){
+    .celebrate-text{
+       margin-left: 30px;
+    }
+    .celebrate-text h1{
+        margin: 20px 0px;
+        width: 300px;
+    }
+    .celebrate-card {
+        /* width: 200px; */
+        margin: 20px;
+    }
+    .navbar ul  {
+    display: none;
+    }
+nav .fa-bars{
+    display: block;
+    }
+nav {
+    position: relative;
+    }
+.header .navbar ul{
+    display:flex;
+    flex-direction: column;
+    justify-content: start;
+    align-items: center;
+    padding: 30px 50px;
+    position: absolute;
+    top: 60px;
+    left:-100%;
+    background-color: white;
+    transition: 0.3s;
+}
+.header .navbar .click{
+    left: 0;
+    }
+
+}
+@media screen and (max-width:680px){
+    .celebrate-text{
+        margin: 5px 20px;
+     }
+     .celebrate-card{
+        margin: 20px 0px;
+        width: 550px;
+        height: 350px;
+    }
+}
+@media screen and (max-width:450px) {
+   
+    .celebrate-text{
+        max-width: 320px;
+        width: 100%;
+        padding: 0 15px;
+    }
+    .celebrate-card .celebrate-text h1{
+        font-size: 23px;
+        line-height: 25px;
+        width: 200px;
+    }
+    nav .fa-bars{
+        padding-left:10%;
+    }
+    nav .logo {
+        margin-left:-30px;
+    }
+}
+@media screen and (max-width:350px){
+    .celebrate-card{
+        margin: 20px 0px;
+        width: 200px;
+    }
+    .celebrate-img img{
+        width: 300px;
+        padding: 0px 10px;
+    }
+}
+.celebrate-text h1{
+    font-size: 30px;
+    line-height:40px ;
+
+}
+.celebrate-text p{
+    margin: 20px 0px;
+    line-height:20px ;
+   color: #5D5656;
+
+}
+button{
+    border: none;
+    background-color:rgb(212, 98, 98);
+    color: white;
+    padding: 14px 30px;
+    text-transform: capitalize;
+    transition: 0.3s;
+    border-radius: 20px;
+
+}
+
+/* Celebret css end */
+
+/* Gift css start */
+
+
 .gift-card{
-    margin:0px 80px;
-    margin-left: 190px;
-    padding:50px 150px ;
+    margin-left: 200px;
+    padding:50px 100px ;
     display: flex;
     flex-wrap: wrap;
     justify-content: start;
@@ -342,7 +485,8 @@ button:hover{
 }
 .gift-card .card{
     padding: 15px 10px;
-    width: 200px ;
+    width: 180px ;
+    height: 250px;
     display: flex;
     flex-direction: column;
     border-radius: 20px;
@@ -385,30 +529,78 @@ button:hover{
     color: red;
     font-weight: 900;
 }
+@media screen and (max-width:1268px){
+    .gift-card{
+        margin:0px 0px;
+        padding:50px 50px ;
+    }
+}
+@media screen and (max-width:730px){
+    .gift .gift-card{
+        margin:0px 50px;
+        padding:50px 30px ;
+        margin-right: -100px;
+    }
+}
+@media screen and (max-width:540px){
+    .gift .gift-card{
+        margin:0px 50px;
+        padding:50px 30px ;
+        margin-right: -100px;
+    }
+    .title{
+        margin-left: 50%;
+    }
+}
+@media screen and (max-width:410px){
+    .gift-card{
+        gap: 25px;
+    }
+    .gift-card .card{
+        padding: 15px 10px;
+        width: 180px ;
+        height: 240px;   
+    }
+}
+@media screen and (max-width:400px){
+    .gift-card{
+        gap: 30px;
+    }
+    .gift-card .card{
+        padding: 15px 0px;
+        width: 100px ;
+        height: 240px;  
+    }
+    .card h1,p{
+        font-size: 15px;
+    }
+}
 
+/* Gift css end */
+
+/* Message css start */
 
 
 .table{
     background-color: rgba(178, 44, 62, 0.918);
-    margin: 100px 150px;
+    margin: 100px 200px;
     border-radius: 60px;
+    width: 900px;
     height: 350px;
     display: flex;
     align-items: center;
-    position: relative;
 }
-.table img{
-    max-width: 400px;
-    width: 100%;
-    position: absolute;
-    top: 20px ;
-    right: 30px;
+.title span:nth-child(2){
+    color: white;
+}
+
+.table-img img{
+    width:300px ;
+    padding: 10px 20px;
 }
 .table-text{
     width: 50%;
     padding: 40px ;
-    color: black;
-    margin-left: 10%;
 }
 .table-text h1{
     color: white;
@@ -432,7 +624,25 @@ button:hover{
     color: white;
     cursor: pointer;
 }
+@media screen and (max-width:680px){
+     .table-text{
+        width: 300px;
+        margin: 5px 20px;
+    }
+    .table-text h1 {
+        font-size: 30px;
+    }
+    .table .table-img img{
+        width:300px ;
+        padding: 10px 0px;
+    }
+    .table{
+        margin: 100px 80px;
+        width: 650px;
+    }
+}
 
+/* Message css end */
 
 
 .footer .display{
@@ -441,6 +651,7 @@ button:hover{
     text-align: center;
     justify-content: center;
     text-align: left;
+    margin: 10px 50px;
 }
 .display h1 p{
     font-weight:400 ;
@@ -449,7 +660,6 @@ button:hover{
     line-height: 25px;
     margin-top: 25px;
    color: #5D5656;
-
 }
 .footer .display h1  .footer-img{
     width: 120px;
@@ -463,56 +673,22 @@ button:hover{
     margin-top: -80px;
     margin-left: 150px;
 }
-
-@media screen and (max-width:1268px){
-    .gift-card{
-        margin:0px 10px;
-        display: flex;
-        align-items:center;
-        flex-direction: row;
-        gap: 40px;
-    }
-}
-@media screen and (max-width:780px){
-    .gift-card{
-        margin-left:-20px;
-        display: flex;
-        align-items:center;
-        flex-direction: row;
-        gap: 40px;
-    }
-
-}
-@media screen and (max-width:730px){
-    .gift-card{
-        padding: 0px 100px;
-        gap: 40px;
-    }
-}
-@media screen and (max-width:640px){
-    .gift-card{
-        padding: 10%;
-        gap: 40px;
-    }
-}
-@media screen and (max-width:540px){
-    .gift-card{
-        padding: 0 20px;
+@media screen and (max-width:680px){
+  .footer .display{
+        padding: 10px 350px;
         gap: 10px;
-        margin-left: 10%;
-        margin: 0 20px;
     }
-   
 }
-
 
 .mr{
     text-align: center;
     border: 1px dashed red;
-    display:block;
     color: rgb(37, 2, 15);
     margin-bottom: 10px;
+    margin-left: 20%;
     font-weight: 900;
+    width: 100%;
+    max-width: 900px;
     font-size: 15px;
     background-color: rgb(37, 139, 139);
 }
