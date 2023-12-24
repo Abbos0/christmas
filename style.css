@@ -10,9 +10,9 @@
 html{
         scroll-behavior: smooth;
 }
-/* body{
+body{
     background-color: rgb(160, 102, 102);
-} */
+}
 nav{
     display: flex;
     justify-content: space-between; 
@@ -558,22 +558,19 @@ button{
     }
     .gift-card .card{
         padding: 15px 10px;
-        width: 180px ;
-        height: 240px;   
+        width: 200px ;
+        height: 200px;   
     }
 }
 @media screen and (max-width:400px){
-    .gift-card{
-        gap: 30px;
-    }
     .gift-card .card{
-        padding: 15px 0px;
-        width: 100px ;
+        width: 150px ;
         height: 240px;  
     }
     .card h1,p{
         font-size: 15px;
     }
+   
 }
 
 /* Gift css end */
